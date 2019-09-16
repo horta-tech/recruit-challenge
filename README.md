@@ -32,8 +32,8 @@ In this challenge you should use the following technologies:
 
 ```JSON
 {
-  "payload": 'the cake is a lie, the cake is a, the cake is, the cake, the',
-  'token': 'a06de92c41655fe2'
+  "payload": "the cake is a lie, the cake is a, the cake is, the cake, the",
+  "token": "a06de92c41655fe2"
 }
 ```
 
@@ -41,15 +41,15 @@ In this challenge you should use the following technologies:
 
 ```JSON
 {
-  'words': {
-    'the': 5,
-    'cake': 4,
-    'is': 3,
-    'a': 2,
-    'lie': 1
+  "words": {
+    "the": 5,
+    "cake": 4,
+    "is": 3,
+    "a": 2,
+    "lie": 1
     },
-  'token': 'a06de92c41655fe2',
-  'token_uses': 8
+  "token": "a06de92c41655fe2",
+  "token_uses": 8
 }
 ```
 

@@ -2,15 +2,15 @@
 
 Welcome to HortaTech coding challenge! We are currently looking for a junior rails fullstack developer and/or a junior front-end developer to join our team. Jump to the challenge of your choice.
 
-# Word Recurrency
+### Word Recurrency
 
-Back ->
+#### Back-end ->
 
 Develop a simple API, that receives a text and returns a JSON with the number count of each word in the text.
 
 [Bonus - Optional] The API must receive a token as a parameter and it will also return the number of API requests made with that token. There should be a limit of 10 API requests for the same token, after which the API returns an error message of your choice.
 
-Front ->
+#### Front-end ->
 
 Simple dashboard, where its possible to see all records of API requests ever made, and a page with all the details of each record.
 ( #INDEX, #SHOW )
@@ -19,6 +19,45 @@ Simple dashboard, where its possible to see all records of API requests ever mad
 
 [Boss -> The floor is lava - Very Very Optional] [There will be cake] Search input where you can type a word and get all the texts submitted with that word, from the most recurrencies to the least.
 
+#### Technologies
+
+In this challenge you should use the following technologies:
+* Ruby on Rails
+* Relational Database
+* HTML5
+* CSS3 or SCSS
+* Javascript / React (Optional)
+
+#### Code API payload sample (Token optional)
+
+```JSON
+{
+  'payload': 'the cake is a lie, the cake is a, the cake is, the cake, the',
+  'token': 'a06de92c41655fe2'
+}
+```
+
+#### Code API return example (Token optional)
+
+```JSON
+{
+  'words': {
+    'the': 5,
+    'cake': 4,
+    'is': 3,
+    'a': 2,
+    'lie': 1
+    },
+  'token': 'a06de92c41655fe2',
+  'token_uses': 8
+}
+```
+
+## User Stories [Mandatory]
+
+* As a visitor, I want to visualize all the API call records, so i can keep track of it's usage.
+* As a visitor, I want to access the page of each record, so i can see all its details, including the text sent and word count.
+* As a 'machine', I want to send a text to the API and receive it's word count.
 
 ### What we expect
 * Clean and well-organized code (DRY, manageable, maintanable)
@@ -30,48 +69,6 @@ Simple dashboard, where its possible to see all records of API requests ever mad
 * Don't worry about browser compatibility. We will use modern browsers
 * Don't worry about creating the most beautiful design. Your components and code
 
-## User Stories [Mandatory]
-
-* As a visitor, I want to visualize all the API call records, so i can keep track of it's usage.
-* As a visitor, I want to access the page of each record, so i can see all its details, including the text sent and word count.
-* As a 'machine', I want to send a text to the API and receive it's word count.
-
-## The Challenge
-
-In this challenge you should use the following technologies:
-* Ruby on Rails
-* Relational Database
-* HTML5
-* CSS3 or SCSS
-* Javascript / React (Optional)
-
-
-#### Code API payload sample (Token optional)
-
-```JSON
-{
-  payload: "the cake is a lie, the cake is a, the cake is, the cake, the",
-  token: 'a06de92c41655fe2'
-  // xxx: 'any other field you think you should add'
-}
-```
-
-#### Code API return example (Token optional)
-
-```JSON
-{
-  words: {
-    the: 5,
-    cake: 4,
-    is: 3,
-    a: 2,
-    lie: 1
-    },
-  token: 'a06de92c41655fe2',
-  token_uses: 8
-  // xxx: 'any other field you think you should add'
-}
-```
 
 ### How to deliver
 

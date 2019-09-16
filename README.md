@@ -32,7 +32,7 @@ In this challenge you should use the following technologies:
 
 ```JSON
 {
-  'payload': 'the cake is a lie, the cake is a, the cake is, the cake, the',
+  "payload": 'the cake is a lie, the cake is a, the cake is, the cake, the',
   'token': 'a06de92c41655fe2'
 }
 ```

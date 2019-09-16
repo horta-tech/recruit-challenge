@@ -1,83 +1,80 @@
-# HortaTech Challenge
+# HortaTech Fullstack Challenge
 
-To-do Intro 
+Welcome to HortaTech coding challenge! We are currently looking for a junior rails fullstack developer and/or a junior front-end developer to join our team. Jump to the challenge of your choice.
 
-## Instructions
+# Word Recurrency
 
-To-do 
+Back ->
 
-#### Code object sample
+Develop a simple API, that receives a text and returns a JSON with the number count of each word in the text.
 
-```
+[Bonus - Optional] The API must receive a token as a parameter and it will also return the number of API requests made with that token. There should be a limit of 10 API requests for the same token, after which the API returns an error message of your choice.
+
+Front ->
+
+Simple dashboard, where its possible to see all records of API requests ever made, and a page with all the details of each record.
+( #INDEX, #SHOW )
+
+[Bonus - Optional] Page to submit a text to the API and visualize the return. You form must use a javascript request to the API and render the response without reloading.
+
+[Boss -> The floor is lava - Very Very Optional] [There will be cake] Search input where you can type a word and get all the texts submitted with that word, from the most recurrencies to the least.
+
+
+### What we expect
+* Clean and well-organized code (DRY, manageable, maintanable)
+* Good front-end practices
+
+### What we DON'T expect
+* Don't implement authorization or authentication
+* Don't spend too much time on this challenge
+* Don't worry about browser compatibility. We will use modern browsers
+* Don't worry about creating the most beautiful design. Your components and code
+
+## User Stories [Mandatory]
+
+* As a visitor, I want to visualize all the API call records, so i can keep track of it's usage.
+* As a visitor, I want to access the page of each record, so i can see all its details, including the text sent and word count.
+* As a 'machine', I want to send a text to the API and receive it's word count.
+
+## The Challenge
+
+In this challenge you should use the following technologies:
+* Ruby on Rails
+* Relational Database
+* HTML5
+* CSS3 or SCSS
+* Javascript / React (Optional)
+
+
+#### Code API payload sample (Token optional)
+
+```JSON
 {
-  type: 'timetracking',
-  latitude: '58.4343',
-  longitude: '-120.9245',
-  created_at: 'Thu, 29 Nov 2018 09:16:09 UTC +00:00'
+  payload: "the cake is a lie, the cake is a, the cake is, the cake, the",
+  token: 'a06de92c41655fe2'
   // xxx: 'any other field you think you should add'
 }
 ```
 
-## User Stories
+#### Code API return example (Token optional)
 
-As a product-oriented company, the most important part of our job is to understand and build features based on our users' needs. These are the main stories for this challenge:
+```JSON
+{
+  words: {
+    the: 5,
+    cake: 4,
+    is: 3,
+    a: 2,
+    lie: 1
+    },
+  token: 'a06de92c41655fe2',
+  token_uses: 8
+  // xxx: 'any other field you think you should add'
+}
+```
 
-* As a company manager, I want to have online access to the time at which my employee checked in or out of the company so that I can later calculate and pay or discount worked hours.
-* As a company manager, I want to see where my employee was when the timetracking was recorded so that I can tell if the employee was at the correct workplace.
-* As a company manager, I want to set specific timetracking geofences so that I can limit timetrackings being recorded only within certain boundaries.
-* As an employee, I want to be able to record my timetrackings so that I can report my work to the company manager and later get paid the correct due amount.
-
-## The Challenge
-
-You should create a timetracking solution that serves all user stories described above.
-In this challenge you should use (at least) the following technologies:
-* Ruby on Rails
-* Relational Database
-* Javascript
-* CSS3 or SCSS
-* HTML5
-
-## The Solution
+### How to deliver
 
 * Create a repository with your solution on Github
-* The solution should be ready to run
-* Instructions to build the code (database migrations etc) should be clear
-* Write all instructions and explain the reasoning behind your technical choices in the README file
-### Mandatory Items
-* Views
-  * Timetracking
-    * New/Create timetracking - should contain at least a clock that updates every second, a comment field and a button
-    * Show timetracking - shows database information on a particular timetracking
-    * Index timetrackings - table with timetrackings, 1 line per item
-  * Geofence
-    * New/Create - should contain at least latitude, longitude and radius
-    * Show - shows database information on a particular geofence
-    * Index - table with geofences, 1 line per item
-* Timetrackings and Geofences should be stored in the database
-
-* **Disable timetracking button if the user is not inside any of the geofences**
-
-* At least one front-end and one back-end validation
-* Timetrackings should be stored with geolocalization information - latitude and longitude are enough and don't need to be precise, but you are expected to implement browser HTML5 geolocalization
-* Unit tests. RSpec is recommended. If you are writing tests, make sure they test something meaningful. All written tests should be working and pass when ran.
-### Optional Items
-These are optional items that could show extra dedication or a particular skill.
-* Show timetracking containing the geolocation on a map (you can use google maps api for this)
-* Create timetracking - Geolocalization could be created by clicking the location on the map
-* Use the SLIM scripting language for views
-* Integration and E2E tests (capybara)
-* [extra points] At least one component in React
-## Expectations
-### What we expect
-* Use clean code (principles such as DRY, manageable and maintanable)
-* Organized and well indented code. Indent with 2 spaces
-* It is highly recommended that all names in your code are written in English rather than Portuguese. The UI should be either in Portuguese or English
-### What we DON'T expect
-* Don't worry about timezone management
-* Don't implement authorization or authentication
-* Don't waste a huge amount of time on this challenge
-* Don't worry about browser compatibility. Assume a modern browser is being used
-* Don't worry about creating the most beautiful design or user experience. Views should be DECENT. Feel free to use bootstrap or any other UI framework
-* Don't worry about 100% coverage. We just want to see how you think about testing
-## Other Information
-* Feel free to use any public gems
+* The instructions must be clear and the solution must be ready to run
+* Deploy your code using heroku (Optional)

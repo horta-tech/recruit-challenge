@@ -12,7 +12,7 @@ Choose a layout of your choice from *our* dribble bucket (https://dribbble.com/r
 #### Step 2
 Code it as close to the real one as you can. Dont worry if you can't make one or more component, just do your best.
 
-*[Bonus - Optional]* Javascript animations of your choice. 
+**[Bonus - Optional]** Javascript animations of your choice. 
 
 #### Technologies
 

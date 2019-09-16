@@ -8,16 +8,16 @@ Welcome to HortaTech coding challenge! We are currently looking for a junior rai
 
 Develop a simple API, that receives a text and returns a JSON with the number count of each word in the text.
 
-*[Bonus - Optional]* The API must receive a token as a parameter and it will also return the number of API requests made with that token. There should be a limit of 10 API requests for the same token, after which the API returns an error message of your choice.
+**[Bonus - Optional]** The API must receive a token as a parameter and it will also return the number of API requests made with that token. There should be a limit of 10 API requests for the same token, after which the API returns an error message of your choice.
 
 #### Front-end ->
 
 Simple dashboard, where its possible to see all records of API requests ever made, and a page with all the details of each record.
 ( #INDEX, #SHOW )
 
-*[Bonus - Optional]* Page to submit a text to the API and visualize the return. You form must use a javascript request to the API and render the response without reloading.
+**[Bonus - Optional]** Page to submit a text to the API and visualize the return. You form must use a javascript request to the API and render the response without reloading.
 
-*[Boss -> The floor is lava - Very Very Optional] [There will be cake]* Search input where you can type a word and get all the texts submitted with that word, from the most recurrencies to the least.
+**[Boss -> The floor is lava - Very Very Optional] [There will be cake]** Search input where you can type a word and get all the texts submitted with that word, from the most recurrencies to the least.
 
 #### Technologies
 

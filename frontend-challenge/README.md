@@ -6,10 +6,10 @@ Welcome to HortaTech coding challenge! We are currently looking for a junior fro
 
 In this challenge, your goal is to develop the frontend of one layout of ~our~ your choice.
 
-# Step 1
+#### Step 1
 Choose a layout of your choice from *our* dribble bucket (https://dribbble.com/rayancastro/buckets/1523860-HortaTech-Challenge)
 
-# Step 2
+#### Step 2
 Code it as close to the real one as you can. Dont worry if you can't make one or more component, just do your best.
 
 *[Bonus - Optional]* Javascript animations of your choice. 
@@ -40,4 +40,4 @@ In this challenge you should use the following technologies:
 
 * Create a repository with your solution on Github
 * The instructions must be clear and the solution must be ready to run
-* *[OPTIONAL]* Deploy your code using heroku 
+* **[OPTIONAL]** Deploy your code using heroku 
